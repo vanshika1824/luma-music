@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global styles */
+html {
+  scroll-behavior: smooth;
+  background-color: #121212; /* dark background */
+  color: #fff;               /* default text */
+  font-family: 'Inter', sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Accent color for links & buttons (not Spotify green!) */
+a {
+  color: #6b5dfc; /* new accent */
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Optional: smooth transitions for text, buttons */
+body, input, button {
+  transition: all 0.2s ease;
+}
